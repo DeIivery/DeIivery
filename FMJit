@@ -1,0 +1,11 @@
+local z 
+z = hookmetamethod(game, "__namecall", function(self,...)
+    local a = {...}
+    
+    if getnamecallmethod() == "FireServer" and self.Name == "DamageMe" and getgenv().e356 then 
+        if type(a[2]) == 'number' then 
+            a[2] = -100
+        end
+    end
+    return z(self,unpack(a))
+end)
