@@ -9,6 +9,7 @@ local Config = {
     HealthBarSide     = "Left",
     Names             = false,
     NamesOutline      = false,
+    Health            = false,
     NamesColor        = Color3.fromRGB(255,255,255),
     NamesOutlineColor = Color3.fromRGB(0,0,0),
     NamesFont         = 2,
@@ -48,13 +49,18 @@ function CreateEsp(Player)
             if Config.Names then
                 Name.Visible = IsVisible
                 Name.Color = Config.NamesColor
-                Name.Text = Player.Name.. '> ' ..math.round(Player.Character.Humanoid.Health)
+                Name.Text = '['.. Player.Name.. ']'
                 Name.Center = true
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
                 Name.Position = Vector2.new(Target2dPosition.X,Target2dPosition.Y - height * 0.5 + -16)
                 Name.Font = Config.NamesFont
                 Name.Size = Config.NamesSize
+            else
+                Name.Visible = false
+            end
+            if Config.Health then
+                Name.Text = '[ '.. Player.Name.. ' ]' .. '[ ' ..math.round(Player.Character.Humanoid.Health).. ' ]'
             else
                 Name.Visible = false
             end
