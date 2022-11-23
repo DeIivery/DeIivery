@@ -4,6 +4,7 @@ local Config = {
     BoxFilled         = true,
     BoxColor          = Color3.fromRGB(255,255,255),
     BoxOutlineColor   = Color3.fromRGB(0,0,0),
+    BoxTransparency   = 0,
     HealthBar         = false,
     HealthBarSide     = "Left",
     Names             = false,
