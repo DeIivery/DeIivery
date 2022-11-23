@@ -49,7 +49,7 @@ function CreateEsp(Player)
                 Name.Visible = IsVisible
                 Name.Color = Config.NamesColor
                 Name.Text = 'Health: '.. math.round(Player.Character.Humanoid.Health)..Player.Name
-                Name.Center = false
+                Name.Center = true
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
                 Name.Position = Vector2.new(Target2dPosition.X - Name.Size.X / 2,Target2dPosition.Y - Name.Size.Y / 2)
