@@ -48,11 +48,11 @@ function CreateEsp(Player)
             if Config.Names then
                 Name.Visible = IsVisible
                 Name.Color = Config.NamesColor
-                Name.Text = 'Health: '.. math.round(Player.Character.Humanoid.Health).. '\n'.. Player.Name
-                Name.Center = true
+                Name.Text = 'Health: '.. math.round(Player.Character.Humanoid.Health)..Player.Name
+                Name.Center = false
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
-                Name.Position = Vector2.new(Target2dPosition.X,Target2dPosition.Y - height * 0.5 + -15)
+                Name.Position = Vector2.new(Target2dPosition.X - Name.Size.X / 2,Target2dPosition.Y - Name.Size.Y / 2)
                 Name.Font = Config.NamesFont
                 Name.Size = Config.NamesSize
             else
