@@ -52,7 +52,7 @@ function CreateEsp(Player)
                 Name.Center = true
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
-                Name.Position = Vector2.new(Target2dPosition.X,Target2dPosition.Y - height * 0 + -15)
+                Name.Position = Vector2.new(Target2dPosition.X,Target2dPosition.Y - height * 0.5 + -15)
                 Name.Font = Config.NamesFont
                 Name.Size = Config.NamesSize
             else
