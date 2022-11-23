@@ -59,10 +59,11 @@ function CreateEsp(Player)
             else
                 Name.Visible = false
             end
-            if Config.Health then
+            if Config.Health and Config.Names then
                 Name.Text = '[ '.. Player.Name.. ' ]' .. '[ ' ..math.round(Player.Character.Humanoid.Health).. ' ]'
             else
-                Name.Visible = false
+                Name.Text = '[ '.. Player.Name.. ' ]'
+                end
             end
             if Config.HealthBar then
                 HealthBarOutline.Visible = IsVisible
