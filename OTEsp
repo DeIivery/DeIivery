@@ -72,8 +72,8 @@ function CreateEsp(Player)
                 HealthBarOutline.ZIndex = 1
     
                 HealthBar.Visible = IsVisible
-                HealthBar.Color = Color3.fromRGB(0, 255, 128):lerp(Color3.fromRGB(0, 255, 128), Player.Character:FindFirstChild("Humanoid").Health/Player.Character:FindFirstChild("Humanoid").MaxHealth)
-                HealthBar.Thickness = 2
+                HealthBar.Color = Color3.fromRGB(0, 255, 128)
+                HealthBar.Thickness = 1.5
                 HealthBar.Filled = true
                 HealthBar.ZIndex = 69
                 if Config.HealthBarSide == "Left" then
