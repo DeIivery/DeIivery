@@ -66,8 +66,9 @@ function CreateEsp(Player)
             end
             if Config.HealthBar then
                 HealthBarOutline.Visible = IsVisible
-                HealthBarOutline.Color = Color3.fromRGB(0, 255, 128)
+                HealthBarOutline.Color = Color3.fromRGB(255,255,255)
                 HealthBarOutline.Filled = true
+                HealthBarOutline.Thickness = 2
                 HealthBarOutline.ZIndex = 1
     
                 HealthBar.Visible = IsVisible
