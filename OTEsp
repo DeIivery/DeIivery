@@ -12,6 +12,7 @@ local Config = {
     Health            = false,
     NamesColor        = Color3.fromRGB(255,255,255),
     NamesOutlineColor = Color3.fromRGB(0,0,0),
+    HealthBarColor    = Color3.fromRGB(0, 204, 102),
     NamesFont         = 2,
     NamesSize         = 13
 }
@@ -72,7 +73,7 @@ function CreateEsp(Player)
                 HealthBarOutline.ZIndex = 1
     
                 HealthBar.Visible = IsVisible
-                HealthBar.Color = Color3.fromRGB(0, 204, 102):lerp(Color3.fromRGB(0, 204, 102), Player.Character:FindFirstChild("Humanoid").Health/Player.Character:FindFirstChild("Humanoid").MaxHealth)
+                HealthBar.Color = Config.HealthBarColor:lerp(Config.HealthBarColor, Player.Character:FindFirstChild("Humanoid").Health/Player.Character:FindFirstChild("Humanoid").MaxHealth)
                 HealthBar.Thickness = 3
                 HealthBar.Filled = true
                 HealthBar.ZIndex = 69
