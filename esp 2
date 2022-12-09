@@ -13,7 +13,7 @@ local Config = {
     NamesColor        = Color3.fromRGB(255,255,255),
     NamesOutlineColor = Color3.fromRGB(0,0,0),
     HealthBarColor    = Color3.fromRGB(0, 204, 102),
-    NamesFont         = 15,
+    NamesFont         = 1,
     NamesSize         = _G.settingsTable.Size
 }
 
