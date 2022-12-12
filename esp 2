@@ -13,8 +13,8 @@ local Config = {
     NamesColor        = Color3.fromRGB(255,255,255),
     NamesOutlineColor = Color3.fromRGB(0,0,0),
     HealthBarColor    = Color3.fromRGB(0, 204, 102),
-    NamesFont         = getgenv().settingsTable.Font,
-    NamesSize         = getgenv().settingsTable.Size
+    NamesFont         = 1,
+    NamesSize         = 13
 }
 
 function CreateEsp(Player)
