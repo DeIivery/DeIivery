@@ -63,7 +63,7 @@ function CreateEsp(Player)
                 Name.Visible = false
             end
             if Config.Health and Config.Names then
-                Name.Text = '['.. Player.Name.. ']' .. '[Level: ' .. Player.Level.Value .. ']' .. ' [ \n' .. math.round(Player.Character.Humanoid.Health) .. ']' .. '[' .. Player.Region.Value .. ']' .. '[Reputation: '.. Player.Renown.Value .. ']'
+                Name.Text = '['.. Player.Name.. ']' .. '[Level: ' .. Player:FindFirstChild("bin").Level.Value .. ']' .. ' [ \n' .. math.round(Player.Character.Humanoid.Health) .. ']' .. '[' .. Player:FindFirstChild("bin").Region.Value .. ']' .. '[Reputation: '.. Player:FindFirstChild("bin").Renown.Value .. ']'
             else
                 Name.Text = '['.. Player.Name.. ']'
             end
